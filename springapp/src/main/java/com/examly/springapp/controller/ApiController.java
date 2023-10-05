@@ -25,11 +25,11 @@ public class ApiController {
         return apiService.addDetails(customer);
     }
     
-    // @GetMapping("/{customerId}")
-    // public Customer getById(@PathVariable int customerId)
-    // {
-    //     return apiService.getById(customerId);
-    // }
+    @GetMapping("/{customerId}")
+    public Customer getById(@PathVariable int customerId)
+    {
+        return apiService.getById(customerId);
+    }
 
 
     @GetMapping("/")
